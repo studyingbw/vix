@@ -1,0 +1,74 @@
+@import "susy";
+@import "compass";
+@import "norm";
+
+@import "layout";
+@import "mixin";
+@import "variables";
+@import "nav";
+
+
+
+
+html, body {
+    margin : 0;
+    background : $default-background-color;
+    font-family : $default-font ;
+    @include container(60em);
+}
+/*
+a {
+    @include link-colors($turquoise, $blue, $blue, $paleblue, $paleblue);
+}
+
+*/
+header{
+    height : 1 ;
+}
+
+main{
+    margin-top: 2em;
+}
+
+main div{
+    background: $background-color;
+    padding: 0em;
+    margin: 1.5em;
+    @include span ( 3.4 );
+    height:200px;
+    border:{
+        style:solid;
+        @include border(1px,1px,1px,1px);
+        width:1px;
+        color:$dovegray;
+    }
+    span {
+        &.category {
+            font-size: 10px;
+            line-weight: 200%;
+            &:before{
+                content: "category >";
+            }
+            &.usability{
+                background: $category-usability;
+            }
+            &.gis{
+                background: $category-gis;
+            }
+            &.uxd{
+                background: $category-uxd;
+            }
+        }
+    }
+}
+
+
+aside .logo{
+    width:150px;
+    heigt:150px;
+}
+
+
+footer{
+    background: $footer-background-color;
+}
