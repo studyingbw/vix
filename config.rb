@@ -1,6 +1,7 @@
 require 'susy'
 require 'compass'
 require 'breakpoint'
+require "normalize-scss'
 
 project_type = :stand_alone
 output_style = :nested
