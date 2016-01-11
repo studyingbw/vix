@@ -23,14 +23,11 @@ aside ul{
     }
 }
 
-aside svg{
-
-}
 aside h3{
 	margin-right: 10px;
 }
 
-.menu-items{
+aside ul .menu-items{
 	display:inline-block;
 	padding:5px 10px 5px 3px;
 	margin:0;
@@ -45,15 +42,15 @@ aside h3{
 		cursor : pointer ;		
 	}
 }
-.nav-option{
+aside .nav-option{
 	display : none ;
 }
 
-.nav-sub ul{
+aside .nav-sub ul{
 	margin:0;
 	margin:5px 8px 3px 8px;
 	font-size: 10px;
-	width:130px;
+	width:130px;	
 	li{
 		//background-color: $white;
 		text-align: right;
