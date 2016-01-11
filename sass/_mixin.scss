@@ -1,0 +1,32 @@
+
+
+@mixin border($top:none, $bottom:none, $left:none, $right:none){
+    top: $top;
+    bottom: $bottom ;
+    left: $left;
+    right: $right;
+}
+
+
+
+/*mixin study
+
+@mixin linx ($link, $visit, $hover, $active) {
+    a {
+        text-decoration : none ;
+        &:link{
+            color : $paleblue ;
+        }
+        &:hover{
+            color : $blue;
+        }
+        &:active{
+            color : $paleblue;
+        }
+        &:visited{
+            color : $turquoise;
+        }
+
+    }
+}
+*/
