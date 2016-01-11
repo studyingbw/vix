@@ -1,6 +1,6 @@
 @import "susy";
 @import "compass";
-@import "norm";
+@import "compass/css3/box-shadow";
 
 @import "layout";
 @import "mixin";
@@ -9,31 +9,33 @@
 
 
 
-
-html, body {
+html,
+body {
     margin : 0;
     background : $default-background-color;
     font-family : $default-font ;
     @include container(60em);
 }
-/*
+
 a {
     @include link-colors($turquoise, $blue, $blue, $paleblue, $paleblue);
 }
 
-*/
+
 header{
     height : 1 ;
 }
 
 main{
     margin-top: 2em;
-}
-main div{
-    background: $background-color;
-    padding: 0em;
-    margin: 1.5em;
     @include span ( 3.4 );
+}
+
+main div {
+    @include box-shadow( #cecece 2px 2px 10px);
+    background: $background-color;
+    padding: 1em;
+    margin: 1.5em;
     height:200px;
     border:{
         style:solid;
@@ -63,8 +65,8 @@ main div{
 
 
 aside .logo{
-    width:150px;
-    heigt:150px;
+    width:220px;
+    heigt:220px;
 }
 
 
