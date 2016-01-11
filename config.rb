@@ -1,6 +1,5 @@
 require 'susy'
 require 'compass'
-require 'normalize-scss'
 require 'breakpoint'
 
 project_type = :stand_alone
