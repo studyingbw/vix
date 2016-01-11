@@ -1,17 +1,15 @@
 
 %plainlist{
-	margin: 0;
-	padding: 0;
-	width:100%;
+	margin : 0;
+	padding : 0;
+	width : 100%;
 }
 
 
 
 aside {
-    @include span ( 3.4 );
-    margin: 1.5em;
-    padding:1em;
-	text-align: right;
+    margin : 1em;
+    height : 100%;
 }
 aside ul{
     padding : 0px ;
@@ -24,14 +22,14 @@ aside ul{
 }
 
 aside h3{
-	margin-right: 10px;
+	margin-right : 10px;
 }
 
 aside ul .menu-items{
-	display:inline-block;
-	padding:5px 10px 5px 3px;
-	margin:0;
-	width :100px;
+	display : inline-block;
+	padding : 5px 10px 5px 3px;
+	margin : 0;
+	width : 100px;
 	cursor : pointer ;
 	&:hover {
 		background-color : $menu-hover-color;
@@ -46,20 +44,22 @@ aside .nav-option{
 	display : none ;
 }
 
+aside .nav-sub{
+	text-align: right;
+}
+
 aside .nav-sub ul{
-	margin:0;
-	margin:5px 8px 3px 8px;
-	font-size: 10px;
-	width:130px;	
+	margin : 0;
+	margin : 5px 8px 3px 8px;
+	font-size : 10px;	
 	li{
-		//background-color: $white;
-		text-align: right;
-		margin: 8px 0px 8px 3px;
-		padding-right: 7px;
-		border: {
+		/* background-color : $white; */
+		margin : 8px 0px 8px 3px;
+		padding-right : 7px;
+		border : {
 			@include border(0px,0px,0px,2px);
 			style : solid;
-			color: $midgray;
+			color : $midgray;
 	    }
 	}
 }
