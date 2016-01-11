@@ -10,6 +10,7 @@
   "dependencies": {
     "backbone": "~1.2.3",
     "d3": "~3.5.12",
-    "ember": "~2.2.0"
+    "ember": "~2.2.0",
+    "normalize-scss": "normalize.scss#~4.0.3"
   }
 }
