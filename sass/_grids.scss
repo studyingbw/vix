@@ -1,0 +1,11 @@
+// Requirements
+// ============
+
+@import "susy";
+
+$susy: (
+  columns: 18,
+  gutters: 2px,
+);
+
+@include layout(12 (60px 20px) split static);

@@ -1,19 +1,19 @@
-@import "susy";
 @import "compass";
-@import "compass/css3/box-shadow";
-@import "breakpoint";
 
-@import "layout";
-@import "mixin";
 @import "variables";
+@import "mixin";
 @import "nav";
-
+@import "modal";
+@import "animation";
+@import "form";
+@import "grids";
+@import "normalize";
 
 html body {
     margin : 0;
     background : $default-background-color;
     font-family : $default-font ;
-    @include container( 80em );
+    @include container( 60em );
 }
 
 a {
@@ -22,9 +22,8 @@ a {
 
 
 header{
-    height : 1 ;
+    margin:0px;
 }
-
 main{
     margin-top: 2em;
 }
@@ -64,7 +63,7 @@ main div {
 }
 
 
-aside .logo{
+.logo{
     width:180px;
     heigt:180px;
 }

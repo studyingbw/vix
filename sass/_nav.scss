@@ -12,6 +12,7 @@ aside {
     height : 100%;
 }
 aside ul{
+	width:200px;
     padding : 0px ;
     margin: 10px 0px 10px 0px;
     li{
@@ -44,9 +45,7 @@ aside .nav-option{
 	display : none ;
 }
 
-aside .nav-sub{
-	text-align: right;
-}
+
 
 aside .nav-sub ul{
 	margin : 0;
@@ -55,9 +54,9 @@ aside .nav-sub ul{
 	li{
 		/* background-color : $white; */
 		margin : 8px 0px 8px 3px;
-		padding-right : 7px;
+		padding-left : 7px;
 		border : {
-			@include border(0px,0px,0px,2px);
+			@include border(0px,0px,2px,0px);
 			style : solid;
 			color : $midgray;
 	    }

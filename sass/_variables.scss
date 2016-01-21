@@ -13,7 +13,7 @@ $black:#130e0a;
 
 $paleblue:#d6eae9;
 $blue: #91b8cf;
-$turquoise :#2980b9;
+$turquoise :#00cccc;
 $beige: #dfd6bd;
 $olive:#aba17e;
 $palegreen:#f3f9f1;
@@ -22,12 +22,6 @@ $peach:#fee1cc;
 $redbean:#d3bcc2;
 $darkred:#9e2121;
 
-$mobile-small : 240px;
-$mobile-large : 320px;
-$tablet-small : 480px;
-$tablet-large : 768px;
-$screen-small : 1024px;
-$screen-large : 1280px;
 
 
 //setting 
@@ -40,9 +34,102 @@ $background-color : $white;
 $category-usability : #bad8d6;
 $category-gis : #bdd8a6;
 $category-uxd : #baa8d7;
+$charset : 'utf-8';
 
 //menu
 $menu-normal-color:$black;
 $menu-hover-color:$silver;
 $menu-active-color:$dovegray;
 $footer-background-color:$midgray;
+
+
+
+
+/* breakpoint responsive setting */
+
+/*default web browser setting is tablet small*/
+// narrow 
+
+/*
+$breakpoints: (
+    'mobile-small': 'screen' (width 320px 479px )( height 480px 767px ) ( min-resolution 2dppx ) handheld (orientation portrait) ,
+    'mobile-large': 'screen'  (width 480px 767px) ( height 768px 1023px ) ( min-resolution 2dppx ) handheld (orientation portrait) ,
+    'tablet-small': 'screen' (width 768px 1023px ) ( height 1024px 1279px ) ( min-resolution 1dppx ) handheld (orientation portrait) ,
+    'tablet-large': 'screen' (width 1024px 1279px ) ( height 1280px 1499px ) ( min-resolution 1dppx ) handheld (orientation portrait) ,
+    'screen-small': 'screen' (width 1280px 1499px ) ( height 1500px 1899px ) ( min-resolution 1.5dppx ) (orientation landscape ) ,
+    'screen-large': 'screen' (width 1500px 1899px) ( height 1900px 2099px ) ( min-resolution 1.5dppx )  (orientation  landscape ) 
+);
+
+
+
+main
+   'mobile-small' 
+        margin-top: 1em;
+        float : left;
+        @include span ( 5 narrow );
+    'mobile-large'
+        margin-top: 1em;
+        @include span ( 4 narrow );
+
+    'tablet-small'
+        margin-top: 2em;
+        float : left;
+        @include span ( 3 narrow );
+    'tablet-large' 
+        margin-top: 2em;
+        float : left;
+        @include span ( 3 narrow );
+    'screen-small' 
+        margin-top: 2em;
+        float : left;
+        @include span ( 2 narrow );
+    'screen-large' 
+        margin-top: 2em;
+        float : left;
+        @include span ( 2 narrow );
+
+main div
+    'mobile-small' 
+         @include span ( 4 );
+        float : right;
+    'mobile-large' 
+        @include span ( 5 1/8 );
+    'tablet-small' 
+        float : left;
+        @include span ( 3 );
+    'tablet-large' ){
+        @include span ( 3 );
+    'screen-small' ){
+        @include span ( 2 );
+     'screen-large' ){
+        @include span ( 2 );
+
+aside
+    'mobile-small' 
+        float : right;
+        text-align: center;
+         @include span ( 2 narrow );        
+
+    > aside .nav-sub{
+        'mobile-large' 
+            float : left;
+            text-align : left  ;
+            @include span ( 5 1/4 );
+            .logo{
+                float:right;
+                width:150px;
+         'tablet-small' 
+            float : none;
+            text-align : right;
+            @include span ( 3 );
+        'tablet-large' 
+            text-align : right;
+            @include span ( 2.5 );
+        'screen-small' 
+            text-align : right;
+            @include span ( 2 );
+        'screen-large' 
+            text-align : right;
+            @include span ( 2 );
+*/
+
