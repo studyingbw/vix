@@ -17,17 +17,16 @@ app = (function($){
 
 		};
 		initialize: function(){
+			parseData();
+			prepareChart();
+			prepareUI();
 		};
 	}
 	//prototype
 	//Calculation  
 	//DOMEvent handler
 	//
-	function initialize(){
-		parseData();
-		prepareChart();
-		prepareUI();
-	}
+
 	if($(document).ready){
 		console.log("testing document loading");
 		loadingImage();
@@ -35,7 +34,6 @@ app = (function($){
 	}
 
 	return { //main flow
-	callEventHandler();
 	}
 })(jQuery));
 */
